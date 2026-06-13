@@ -456,5 +456,86 @@ A variety of computational approaches have been developed to predict protein sec
 
 ---
 
+## 12. Chou-Fasman Method
+
+The **Chou-Fasman method** is one of the earliest approaches for predicting protein secondary structure. It predicts **alpha helices (H)** and **beta strands (E)** using amino acid propensities derived from known protein structures.
+
+### Basic Principle
+
+Different amino acids have different tendencies to occur in specific secondary structures.
+
+For example:
+
+- Alanine tends to occur in **alpha helices**
+- Valine tends to occur in **beta strands**
+- Proline often disrupts **alpha helices**
+
+### Propensity Formula
+
+:contentReference[oaicite:0]{index=0}
+
+Where:
+
+| Symbol | Meaning |
+|---------|---------|
+| \(P(s,a)\) | Propensity of amino acid **a** for structure **s** |
+| \(p(s,a)\) | Probability of amino acid **a** occurring in structure **s** |
+| \(p(a)\) | Overall probability of amino acid **a** occurring in proteins |
+
+### Interpretation
+
+| Propensity Value | Interpretation |
+|------------------|---------------|
+| \(P(s,a) > 1\) | Amino acid favours that structure |
+| \(P(s,a) < 1\) | Amino acid disfavours that structure |
+| \(P(s,a) = 1\) | No preference |
+
+### Example
+
+Suppose:
+
+- \(p(\text{Helix},A) = 0.12\)
+- \(p(A) = 0.08\)
+
+Then:
+
+\[
+P(\text{Helix},A)=\frac{0.12}{0.08}=1.5
+\]
+
+Since:
+
+\[
+P(\text{Helix},A) > 1
+\]
+
+Alanine has a strong tendency to occur in **alpha helices**.
+
+### Chou-Fasman Prediction Process
+
+1. Calculate amino acid propensities.
+2. Identify regions with high helix-forming or strand-forming potential.
+3. Extend predicted regions based on neighbouring residues.
+4. Assign secondary structure states:
+   - **H** = Alpha Helix
+   - **E** = Beta Strand
+   - **C** = Coil
+
+### Advantages
+
+- Simple and easy to understand.
+- Computationally fast.
+- Historically important in protein bioinformatics.
+
+### Limitations
+
+- Uses only local sequence information.
+- Ignores long-range interactions.
+- Less accurate than modern machine learning methods.
+- Typically achieves lower prediction accuracy than PSI-PRED or JPred.
+
+### Summary
+
+The Chou-Fasman method predicts protein secondary structure using amino acid propensities. Amino acids with high propensity values are more likely to form alpha helices or beta strands, making this method one of the earliest statistical approaches to secondary structure prediction.
 
 
