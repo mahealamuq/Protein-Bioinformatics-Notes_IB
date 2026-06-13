@@ -261,6 +261,9 @@ In this example:
 
 The random coil regions occur at the beginning, middle, and end of the sequence where no regular secondary structure is predicted.
 
+<img width="1346" height="904" alt="image" src="https://github.com/user-attachments/assets/2da67f3f-10f3-4dba-84d0-495d1c32dcab" />
+
+
 ### Summary
 
 Random coils are flexible, irregular protein regions that lack the repeating patterns of alpha helices and beta sheets. They play important roles in connecting structured domains, enabling flexibility, and facilitating molecular interactions.
