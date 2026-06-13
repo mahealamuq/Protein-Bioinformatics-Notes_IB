@@ -378,3 +378,54 @@ This is because protein structure is often conserved even when amino acid sequen
 Secondary structure prediction bridges the gap between protein sequence and three-dimensional structure. It helps researchers understand protein function, improve sequence analysis, and investigate proteins whose experimental structures are not yet available.
 
 ---
+
+## 10. Secondary Structure Prediction Problem
+
+Secondary structure prediction is a classification problem in bioinformatics.
+
+### Problem Definition
+
+| Component | Description |
+|------------|-------------|
+| Input | Protein amino acid sequence |
+| Output | Secondary structure class for each amino acid residue |
+
+
+### Example
+
+#### Input Sequence
+
+```text
+SGGGGGILEKLGDICFSLRYVPTAGKLTVVILEAKNLKKMDVGGLSDPYVKIHLMQNGKR
+```
+
+#### Predicted Secondary Structure
+
+```text
+CCCCCCHHHCCCEEEEEEEEECCCCEEEEEEEEEECCCCCCCCCCCCEEEEEEEEECCEE
+```
+
+### Goal of Prediction
+
+```text
+Protein Sequence
+       ↓
+Prediction Algorithm
+       ↓
+H E C T Assignment
+       ↓
+Secondary Structure Map
+```
+
+### Why It Is Challenging
+
+- Amino acids interact with nearby and distant residues.
+- Secondary structure depends on the protein's overall folding.
+- Similar sequences may have different structures.
+- Different proteins can share similar structural motifs.
+
+
+
+### Summary
+
+The secondary structure prediction problem aims to assign a structural state (**H**, **E**, **C**, or **T**) to every amino acid in a protein sequence. This provides an important bridge between primary sequence information and the final three-dimensional protein structure.
