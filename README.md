@@ -425,7 +425,36 @@ Secondary Structure Map
 - Different proteins can share similar structural motifs.
 
 
-
 ### Summary
 
 The secondary structure prediction problem aims to assign a structural state (**H**, **E**, **C**, or **T**) to every amino acid in a protein sequence. This provides an important bridge between primary sequence information and the final three-dimensional protein structure.
+
+---
+
+## 11. Methods for Secondary Structure Prediction
+
+A variety of computational approaches have been developed to predict protein secondary structure from amino acid sequences.
+
+#### 1. Statistical Analysis
+- Based on observed frequencies of amino acids in known structures.
+- Example: **Chou-Fasman Method**.
+- One of the earliest secondary structure prediction approaches.
+
+#### 2. Nearest Neighbour Methods
+- Compare a query sequence with proteins of known structure.
+- Predict secondary structure from similar sequence fragments.
+- Examples: **NNSSP**, **SSPAL**
+
+
+#### 3. Machine Learning Methods
+- Use training datasets of proteins with known structures.
+- Identify complex relationships between sequence and structure.
+- Examples:
+  - **Neural Networks**, **Support Vector Machines (SVMs)**
+       - • PHD, Psi-Pred, J-Pred
+  - **Hidden Markov Models (HMMs)**
+
+---
+
+
+
