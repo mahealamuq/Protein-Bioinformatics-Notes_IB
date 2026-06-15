@@ -732,7 +732,7 @@ git clone https://github.com/mahealamuq/Protein-Bioinformatics-Notes_IB.git
 **Enter the repository:**
 
 ```
-cd protein-secondary-structure-prediction
+cd Protein-Bioinformatics-Notes_IB
 ```
 **Launch Jupyter Notebook:**
 ```
